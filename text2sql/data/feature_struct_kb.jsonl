@@ -1,0 +1,1 @@
+{"feature_struct": "t_student_score.reduce('student_id', 'avg(score) as avg_score').avg_score", "name": "avg_score", "rule_trans": "从t_student_score表中按照学生编号分组，对分数取平均值", "valid_tans": "", "table_list": ["t_student_score"], "MD5": "0081203dcc68a1cb26b678556684e3e6"}

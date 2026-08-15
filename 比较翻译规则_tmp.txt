@@ -1,0 +1,4 @@
+ID	operator	struct	rule1	rule2
+1	>=	{col0} >= {arg0}	{transCol(col0)}大于等于{arg0}	{transCol(col0)}不小于于{arg0}
+2	between	{col0} between {arg0} and {arg1}	{transCol(col0)}在 {arg0} 与 {arg1} 之间	
+3	in	{col0} in ({args0})	{transCol(col0)}在 {stringFormat(args0)}中	

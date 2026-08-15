@@ -1,0 +1,51 @@
+[
+  {
+    "ID": 1,
+    "name": "avg",
+    "struct": "{fn}({col})",
+    "rule1": "{transCol(col)}的平均值",
+    "rule2": ""
+  },
+  {
+    "ID": 2,
+    "name": "sum",
+    "struct": "{fn}({col})",
+    "rule1": "{transCol(col)}的总和",
+    "rule2": ""
+  },
+  {
+    "ID": 3,
+    "name": "count",
+    "struct": "{fn}({col})",
+    "rule1": "{transCol(col)}的计数",
+    "rule2": "数量"
+  },
+  {
+    "ID": 4,
+    "name": "max",
+    "struct": "{fn}({col})",
+    "rule1": "{transCol(col)}的最大值",
+    "rule2": ""
+  },
+  {
+    "ID": 5,
+    "name": "min",
+    "struct": "{fn}({col})",
+    "rule1": "{transCol(col)}的最小值",
+    "rule2": ""
+  },
+  {
+    "ID": 6,
+    "name": "concat",
+    "struct": "{fn}({col0}, {col1})",
+    "rule1": "{transCol(col0)}与{transCol(col1)}拼接",
+    "rule2": ""
+  },
+  {
+    "ID": 7,
+    "name": "row_number",
+    "struct": "{fn}() over (partition by {col0} order by {col1})",
+    "rule1": "按{transCol(col1)}排序的{transCol(col0)}分组序号",
+    "rule2": ""
+  }
+]

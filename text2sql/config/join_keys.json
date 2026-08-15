@@ -1,0 +1,12 @@
+{
+  "join_keys": [
+    {
+      "left_table": "t_student",
+      "left_col": "student_id",
+      "right_table": "t_student_score",
+      "right_col": "student_id",
+      "join_type": "left"
+    }
+  ],
+  "auto_match": true
+}

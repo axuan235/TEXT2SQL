@@ -1,0 +1,2 @@
+{"compare_struct": "grade = X", "value_type": "string", "rule_trans": "年级等于X", "valid_tans": "X年级", "table": "t_student_score", "c_md5": "405e0d0c065d47440780d17bec876fb8"}
+{"compare_struct": "test_type = X", "value_type": "string", "rule_trans": "考试类型等于X", "valid_tans": "X", "table": "t_student_score", "c_md5": "6d9d6389d2044749fd30b5ecfd2582fa"}

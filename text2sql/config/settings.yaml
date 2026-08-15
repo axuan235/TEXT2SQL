@@ -1,0 +1,43 @@
+# 全局配置
+app:
+  name: text2sql
+  version: 0.1.0
+  host: 0.0.0.0
+  port: 8000
+
+# 知识库配置（纯文本 JSONL 管理，便于人工核验）
+kb:
+  feature_struct_file: data/feature_struct_kb.jsonl   # 特征结构库
+  qualifier_file: data/qualifier_kb.jsonl              # 限定词库
+  dict_dir: data/dict                                  # 映射编码字典目录（如城市编码 F100）
+
+# 表结构信息配置
+table_schema_file: config/table_schema.json
+# 表关联键配置
+join_keys_file: config/join_keys.json
+
+# 翻译规则配置
+translate:
+  compare_rules_file: config/compare_trans_rules.json  # 比较运算符翻译规则
+  func_rules_file: config/func_trans_rules.json        # 函数翻译规则
+
+# LLM / Embedding 配置（未配置时使用内置关键词/规则兜底，保证可离线运行）
+llm:
+  enabled: false
+  chat:
+    base_url: ""
+    api_key: ""
+    model: ""
+  embedding:
+    base_url: ""
+    api_key: ""
+    model: ""
+
+# 特征生成检索参数
+retrieval:
+  top_k: 5
+  min_similarity: 0.6
+
+# 候选集生成参数
+candidate:
+  max_combinations: 50

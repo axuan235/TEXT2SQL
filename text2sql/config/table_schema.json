@@ -1,0 +1,95 @@
+{
+  "tables": [
+    {
+      "table_space": "教务系统",
+      "table_name": "t_student",
+      "table_cn": "学生信息表",
+      "columns": [
+        {
+          "col": "student_id",
+          "col_cn": "学生编号",
+          "trans_suffix": "",
+          "mapping": "",
+          "data_type": "int"
+        },
+        {
+          "col": "both_year",
+          "col_cn": "出生年",
+          "trans_suffix": "{value}年",
+          "mapping": "",
+          "data_type": "string"
+        },
+        {
+          "col": "gender",
+          "col_cn": "性别",
+          "trans_suffix": "",
+          "mapping": "1:男;2:女",
+          "data_type": "int"
+        },
+        {
+          "col": "city_code",
+          "col_cn": "城市编码",
+          "trans_suffix": "",
+          "mapping": "dict:F100",
+          "data_type": "int"
+        }
+      ]
+    },
+    {
+      "table_space": "教务系统",
+      "table_name": "t_student_score",
+      "table_cn": "学生成绩表",
+      "columns": [
+        {
+          "col": "student_id",
+          "col_cn": "学生编号",
+          "trans_suffix": "",
+          "mapping": "",
+          "data_type": "int"
+        },
+        {
+          "col": "score",
+          "col_cn": "分数",
+          "trans_suffix": "{value}分",
+          "mapping": "",
+          "data_type": "int"
+        },
+        {
+          "col": "test_type",
+          "col_cn": "考试类型",
+          "trans_suffix": "",
+          "mapping": "1:期中;2:期末",
+          "data_type": "string"
+        },
+        {
+          "col": "grade",
+          "col_cn": "年级",
+          "trans_suffix": "{value}年级",
+          "mapping": "",
+          "data_type": "string"
+        },
+        {
+          "col": "class",
+          "col_cn": "班级",
+          "trans_suffix": "{value}班",
+          "mapping": "",
+          "data_type": "string"
+        },
+        {
+          "col": "first_name",
+          "col_cn": "姓",
+          "trans_suffix": "",
+          "mapping": "",
+          "data_type": "string"
+        },
+        {
+          "col": "last_name",
+          "col_cn": "名",
+          "trans_suffix": "",
+          "mapping": "",
+          "data_type": "string"
+        }
+      ]
+    }
+  ]
+}

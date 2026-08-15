@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text2sql"
+version = "0.1.0"
+description = "用户描述转SQL模型系统：特征提取/特征生成/计算规划/规则翻译"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "pydantic>=2.6",
+    "PyYAML>=6.0",
+    "sqlglot>=23.0",
+    "requests>=2.31",
+]
+
+[project.scripts]
+text2sql-api = "app.main:run"
+text2sql-init-kb = "scripts.init_kb:main"
+
+[tool.setuptools.packages.find]
+include = ["app*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

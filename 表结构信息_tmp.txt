@@ -1,0 +1,5 @@
+表空间	表名称	中文表名	列名	中文列名	翻译补全	字段映射信息	数据类型
+教务系统	student	学生信息表	student_id	学生编号			int
+教务系统	student	学生信息表	both_year	出生年	{value}年		string
+教务系统	student	学生信息表	gender	性别		1:男;2:女	int
+教务系统	student	学生信息表	city_code	城市编码		字典编码 F100		int

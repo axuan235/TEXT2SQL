@@ -1,0 +1,44 @@
+[
+  {
+    "ID": 1,
+    "operator": ">=",
+    "struct": "{col0} >= {arg0}",
+    "rule1": "{transCol(col0)}大于等于{transValue(arg0)}",
+    "rule2": "{transCol(col0)}不小于于{transValue(arg0)}"
+  },
+  {
+    "ID": 2,
+    "operator": "between",
+    "struct": "{col0} between {arg0} and {arg1}",
+    "rule1": "{transCol(col0)}在 {transValue(arg0)} 与 {transValue(arg1)} 之间",
+    "rule2": ""
+  },
+  {
+    "ID": 3,
+    "operator": "in",
+    "struct": "{col0} in ({args0})",
+    "rule1": "{transCol(col0)}在 {stringFormat(transValue(args0))}中",
+    "rule2": ""
+  },
+  {
+    "ID": 4,
+    "operator": "=",
+    "struct": "{col0} = {arg0}",
+    "rule1": "{transCol(col0)}等于{transValue(arg0)}",
+    "rule2": ""
+  },
+  {
+    "ID": 5,
+    "operator": ">",
+    "struct": "{col0} > {arg0}",
+    "rule1": "{transCol(col0)}大于{transValue(arg0)}",
+    "rule2": ""
+  },
+  {
+    "ID": 6,
+    "operator": "<",
+    "struct": "{col0} < {arg0}",
+    "rule1": "{transCol(col0)}小于{transValue(arg0)}",
+    "rule2": ""
+  }
+]
